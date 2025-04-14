@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      padding: 50px 0;
+    }
+    .pricing-table {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 250px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      text-align: center;
+      padding: 20px 0;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .card-subheader {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .price {
+      color: white;
+      padding: 15px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .green { background: #1abc9c; }
+    .blue { background: #3498db; }
+    .pink { background: #e91e63; }
+    .features {
+      background: #111;
+      color: white;
+      padding: 10px 20px;
+    }
+    .features li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .features li:last-child {
+      border-bottom: none;
+    }
+    .check {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    .cross {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .buy {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+    .cart-icon {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="pricing-table">
+  <!-- Basic Plan -->
+  <div class="card">
+    <div class="card-header">Beginners</div>
+    <div class="card-subheader">For our new customers</div>
+    <div class="price green">Rs.2000 Per Month</div>
+    <ul class="features">
+      <li>Project Dashboard <span class="check">✔</span></li>
+      <li>AR/VR tool access <span class="check">✔</span></li>
+      <li>Upto 5 project standard support<span class="check">✔</span></li>
+      <li>Unlimited time access  <span class="cross">✘</span></li>
+      <li>Material library <span class="cross">✘</span></li>
+      <li>Advanced features<span class="cross">✘</span></li>
+    </ul>
+    <div class="buy green">
+      <span class="cart-icon">🛒</span>
+    </div>
+  </div>
+
+  <!-- Business Plan -->
+  <div class="card">
+    <div class="card-header">Professionals</div>
+    <div class="card-subheader">Master your creativity</div>
+    <div class="price blue">Rs.22000 Per Year</div>
+    <ul class="features">
+      <li>Unlimited time access <span class="check">✔</span></li>
+      <li>Unlimited projects <span class="check">✔</span></li>
+      <li>AR and AR tool kit access <span class="check">✔</span></li>
+      <li>3D modelling<span class="check">✔</span></li>
+      <li>Material library<span class="check">✔</span></li>
+     
+    </ul>
+    <div class="buy blue">
+      <span class="cart-icon">🛒</span>
+    </div>
+  </div>
+
+  <!-- Business Premium Plan -->
+  <div class="card">
+    <div class="card-header">Virtunest COLLAB</div>
+    <div class="card-subheader">Collab with you competetor designers</div>
+    <div class="price pink">FREE</div>
+    <ul class="features">
+      <li>Private & shared project rooms<span class="check">✔</span></li>
+      <li>Real-time design collaboration (like Figma for architecture)<span class="check">✔</span></li>
+      <li>Role-based access (e.g., architect, interior designer, structural engineer)<span class="check">✔</span></li>
+      <li>Non-disclosure features to protect sensitive work <span class="check">✔</span></li>
+      <li>Compare design iterations  <span class="check">✔</span></li>
+      
+    </ul>
+    <div class="buy pink">
+      <span class="cart-icon">🛒</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
