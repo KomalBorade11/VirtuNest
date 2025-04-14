@@ -125,10 +125,74 @@ body {
    
 
   <div>
-<section class="hero">
- <img src="https://www.decoraid.com/wp-content/uploads/2018/07/Luxurious-interior-design-living-room-and-fireplace-in-a-beautiful-house-scaled.jpeg" alt=""> 
-  
-</section>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>VIRTUNEST</title>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body, html {
+          height: 100%;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        .hero {
+          position: relative;
+          height: 100vh;
+          background: url('https://media.istockphoto.com/id/1824615178/photo/interior-design-of-modern-apartment-with-colorful-dark-walls-and-orange-sofa-interior-mockup.jpg?s=612x612&w=0&k=20&c=iYt26CAed3m48RWN63aJGXe0t_3FaKMFBEy_DigJb4w=') no-repeat center center/cover;
+        }
+    
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.4); /* darkens image */
+          z-index: 1;
+        }
+    
+        .content {
+          position: relative;
+          z-index: 2;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-align: center;
+        }
+    
+        .content h1 {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+    
+        .content p {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+          <p>Welcome to</p>
+          <h1>VIRTUNEST</h1>
+        </div>
+      </section>
+    
+    </body>
+    </html>
   
     
   </section>
